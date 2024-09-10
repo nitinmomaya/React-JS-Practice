@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import TodoApp from './TodoList/TodoApp'
+import ToastChallenge from './ToastChallenge/ToastChallenge'
+
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <TodoApp />
+  <ToastChallenge/>
   </StrictMode>,
 )
