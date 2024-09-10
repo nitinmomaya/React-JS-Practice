@@ -14,11 +14,9 @@ function TodoApp() {
   };
 
   const handleSubmit = () => {
-
-     if (todo.trim()===''){
-      alert("Enter Task")
-     }
-    else if (isEdit != 0) {
+    if (todo.trim() === "") {
+      alert("Enter Task");
+    } else if (isEdit != 0) {
       setTodoList((prev: Array<Todo>) => {
         const editTask = prev.map((task) =>
           task.id === isEdit ? { ...task, task: todo } : task
@@ -43,11 +41,10 @@ function TodoApp() {
   };
 
   const handleDelete = (id: number) => {
-    setTodoList((prev:Array<Todo>)=>{
-
-      const deleteTask=prev.filter((task:Todo)=> task?.id!=id);
+    setTodoList((prev: Array<Todo>) => {
+      const deleteTask = prev.filter((task: Todo) => task?.id != id);
       return [...deleteTask];
-    })
+    });
   };
   return (
     <>

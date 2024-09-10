@@ -9,8 +9,11 @@ interface TodoListProps {
   handleDelete: (id: number) => void;
 }
 
-const TodoList: React.FC<TodoListProps> = ({ todoList,handleEdit,handleDelete }) => {
-  
+const TodoList: React.FC<TodoListProps> = ({
+  todoList,
+  handleEdit,
+  handleDelete,
+}) => {
   return (
     <div>
       {todoList.map((todo: Todo) => (
