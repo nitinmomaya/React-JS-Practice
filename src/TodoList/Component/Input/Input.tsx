@@ -10,7 +10,7 @@ const Input: React.FC<Props> = ({ handleChange, value }) => {
         value={value}
         onChange={handleChange}
         type="text"
-        placeholder="Add a Task"
+        placeholder="Add a Task for you"
       />
     </>
   );
